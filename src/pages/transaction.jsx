@@ -2,8 +2,8 @@ import { useState } from 'react';
 import TransList from './transList';
 import TransSearch from './transSearch';
 import { Link } from 'react-router-dom';
-import { CgProfile } from "react-icons/cg";
-import { VscArrowSmallDown } from "react-icons/vsc";
+import { CgProfile } from 'react-icons/cg';
+import { VscArrowSmallDown } from 'react-icons/vsc';
 
 const Transaction = () => {
   const [data, setData] = useState([
@@ -93,23 +93,32 @@ const Transaction = () => {
   return (
     <div className="">
       <div className="flex items-center justify-between mx-6 py-6">
-        <h2>
+        <h2 className="mr-10 text-xl font-semibold">
           <Link to="/">Transaction History</Link>
         </h2>
         <div className="flex items-center">
           <input
-            className=" pl-2 border rounded-md mr-2"
+            className="w-full pl-2  rounded-md mr-2"
             type="text"
             placeholder="search"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
           />
-          <div><CgProfile /> </div>
-          <div><VscArrowSmallDown /></div>
+          <div>
+            <img src="bell.svg" alt="" />
+          </div>
+          <div className="mx-1">
+            <img src="./Profile.svg" alt="" />
+            {/* <CgProfile />{' '} */}
+          </div>
+          <div>
+            <img src="scroll-dwn.svg" alt="" />
+            {/* <VscArrowSmallDown /> */}
+          </div>
         </div>
       </div>
 
-      <div className="bg-white m-6 p-1 rounded-lg">
+      <div className="bg-secondary-grey2 m-6 p-1 rounded-lg ">
         <TransSearch data={data} setData={setData} setSearch={setSearch} />
         <TransList data={data} />
         {/* {data.map((db) => (

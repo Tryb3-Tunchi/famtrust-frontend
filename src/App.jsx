@@ -5,6 +5,7 @@ import MainLayout from './components/Layout/MainLayout';
 import TopBar from './components/TopBar';
 import Transaction from './pages/transaction';
 import FundRequest from './pages/fundRequest';
+import Submit from './pages/submit';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         <Routes>
           <Route path="/transaction.jsx" element={<Transaction />} />
           <Route path="/fundRequest.jsx" element={<FundRequest />} />
+          <Route path="/submit.jsx" element={<Submit />} />
         </Routes>
-        
       </MainLayout>
     </Router>
   );

@@ -25,7 +25,7 @@ const FundRequest = () => {
   return (
     <div>
       <div className="flex items-center justify-between mx-6 py-6">
-        <h2 className="text-xl font-semibold">
+        <h2 className="text-xl font-semibold mr-8">
           <Link to="/"> Fund Request</Link>
         </h2>
         <div className="flex items-center ">
@@ -38,8 +38,10 @@ const FundRequest = () => {
               setSearch(event.target.value);
             }}
           />
-          <div><img src="bell.svg" alt="" /></div>
-          <div className='mx-1'>
+          <div>
+            <img src="bell.svg" alt="" />
+          </div>
+          <div className="mx-1">
             <img src="./Profile.svg" alt="" />
             {/* <CgProfile />{' '} */}
           </div>
@@ -47,7 +49,6 @@ const FundRequest = () => {
             <img src="scroll-dwn.svg" alt="" />
             {/* <VscArrowSmallDown /> */}
           </div>
-          
         </div>
       </div>
       <div className="bg-secondary-grey2 m-6 p-4 rounded-lg">
@@ -89,7 +90,7 @@ const FundRequest = () => {
             <label className="flex-1" htmlFor="">
               Request Amount
               <input
-                className="w-full rounded-xl border m-1 block p-2"
+                className="w-full rounded-xl border m-1 block p-2 flex-1"
                 type="text"
                 placeholder="Enter Amount"
                 value={amount}
@@ -97,10 +98,10 @@ const FundRequest = () => {
               />
             </label>
 
-            <label className="ml-6 flex-1 " htmlFor="">
+            <label className="ml-6 flex-1 truncate " htmlFor="">
               Request Date
               <input
-                className="w-full rounded-xl border p-2 m-1  block  "
+                className="w-full  rounded-xl border p-2 m-1  block  "
                 type="date"
                 value={date}
                 onChange={(event) => setDate(event.target.value)}

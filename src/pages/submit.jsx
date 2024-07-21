@@ -17,12 +17,12 @@ const Submit = (search, setSearch) => {
     <div>
       {/* <h2>jdjhdjdjhdjh</h2> */}
       <div className="flex items-center justify-between mx-6 py-6">
-        <h2 className="text-xl font-semibold">
+        <h2 className="text-xl font-semibold mr-6">
           <Link to="/">DashBoard</Link>
         </h2>
         <div className="flex items-center">
           <input
-            className=" pl-2 border rounded-md mr-2"
+            className=" pl-2 border rounded-md w-full mr-2"
             type="text"
             placeholder="search"
           />
@@ -41,7 +41,7 @@ const Submit = (search, setSearch) => {
       </div>
       <div className="bg-secondary-grey2 te m-6 p-1 rounded-lg p-4  ">
         <div className="flex justify-center text-center mt-4">
-          <p className="animate-spi">
+          <p className="animate-spin">
             <FaRegCheckCircle />
           </p>
         </div>

@@ -5,18 +5,20 @@ import { Link } from 'react-router-dom';
 const TransList = ({ data }) => {
   return (
     <div>
-      <div className="border-2 p-2 md:m-8 mx-1 flex justify-around mt-6 truncate font-semibold rounded-md">
-        <p className="truncate">Date</p>
-        <p className="mx-2 ">Amount</p>
-        <p>Description</p>
-        <p className="ml-2">Category</p>
-        <p className="mx-2">Transaction ID</p>
-        <p className="mr-2">Status</p>
+      <div className="border-2 p-2 md:m-8 flex justify-around mt-6 truncate font-semibold rounded-md w-11/12 mx-auto text-sm md:text-base">
+      <div className='flex justify-center truncate w-full mx-auto'>
+        <p className="">Date</p>
+        <p className="mx-2 truncate ">Amount</p>
+        <p className='truncate'>Description</p>
+        <p className="ml-2 truncate">Category</p>
+        <p className="mx-2 truncate">Transaction ID</p>
+        <p className="mr-2 truncate">Status</p>
+        </div>
       </div>
-      <div className="pb-10 ">
+      <div className="pb-10 w-11/12 mx-auto ">
         {data.map((db) => (
           <div className="flex justify-around truncate" key={db.id}>
-            <div className="break-words  text-secondary-grey px-4 my-2 ">
+            <div className="break-words  text-secondary-grey px-4 my-2 text-sm md:text-base ">
               {db.date}
             </div>
             <div className="text-primary-blue px-4 my-2 ">{db.Amount}</div>

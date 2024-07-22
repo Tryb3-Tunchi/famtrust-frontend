@@ -41,7 +41,7 @@ const Submit = (search, setSearch) => {
       </div>
       <div className="bg-secondary-grey2 te m-6 p-1 rounded-lg p-4  ">
         <div className="flex justify-center text-center mt-4">
-          <p className="animate-spin">
+          <p className="animate-spi">
             <FaRegCheckCircle />
           </p>
         </div>
@@ -67,7 +67,7 @@ const Submit = (search, setSearch) => {
         <p>
           if you have any question or need any assistance, please contact our
           support team at{' '}
-          <a href="">support@farmtrust.com or call 1-800-123-4567</a>
+          <a className='underline text-primary-blue hover:text-primary-red'  href="">support@farmtrust.com</a> or call 1-800-123-4567
         </p>
         <div className=" w-3/4 my-10 text-white rounded-xl p-3  text-center m-auto bg-blue-600 transition hover:scale-105">
           <button className=" ">

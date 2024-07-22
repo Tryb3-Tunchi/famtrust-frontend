@@ -6,19 +6,19 @@ const TransList = ({ data }) => {
   return (
     <div>
       <div className="border-2 p-2 md:m-8 flex justify-around mt-6 truncate font-semibold rounded-md w-11/12 mx-auto text-sm md:text-base">
-      <div className='flex justify-center truncate w-full mx-auto'>
-        <p className="">Date</p>
-        <p className="mx-2 truncate ">Amount</p>
-        <p className='truncate'>Description</p>
-        <p className="ml-2 truncate">Category</p>
-        <p className="mx-2 truncate">Transaction ID</p>
-        <p className="mr-2 truncate">Status</p>
+        <div className="flex justify-between truncate w-11/12 mx-auto">
+          <p className="">Date</p>
+          <p className="mx-2 truncate ">Amount</p>
+          <p className="truncate">Description</p>
+          <p className="ml-2 truncate">Category</p>
+          <p className="mx-2 truncate">Transaction ID</p>
+          <p className="mr-2 truncate">Status</p>
         </div>
       </div>
       <div className="pb-10 w-11/12 mx-auto ">
         {data.map((db) => (
           <div className="flex justify-around truncate" key={db.id}>
-            <div className="break-words  text-secondary-grey px-4 my-2 text-sm md:text-base ">
+            <div className="break-words  text-secondary-grey px-4 my-2 text-sm md:text-base  ">
               {db.date}
             </div>
             <div className="text-primary-blue px-4 my-2 ">{db.Amount}</div>

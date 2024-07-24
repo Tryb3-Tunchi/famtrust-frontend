@@ -37,7 +37,7 @@ const NewsLetter = () => {
 
             <button
               onClick={pushSubmit}
-              className="bg-primary-blue rounded-md p-1 w-2/4 text-xs text-white"
+              className="bg-primary-blue rounded-md ml-[3px] p-1 w-2/4 text-xs text-white"
             >
               <Link to="">Subscribe</Link>
             </button>

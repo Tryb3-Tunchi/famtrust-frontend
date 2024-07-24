@@ -10,9 +10,9 @@ const NewsLetter = () => {
 
   return (
     <div className="flex flex-wrp md:flex-nowrap justify-around items-center w-11/12 mx-auto mt-20 h-[358px] shadow-md bg-secondary-grey2">
-      <div className="flex w-11/12 mx-auto justify-center flex-1 ml-4 mt-10 ">
+      <div className="flex w-11/12 mx-auto justify-center flex-1 ml-6 mt-10 ">
         <div className="mr-2  ">
-          <p className="border-e-2 border-black pr-10 font-semibold ">
+          <p className="border-e-2 border-black pr-10 font-semibold text-sm ">
             Subscribe <br />
             to get updated <br /> news
           </p>

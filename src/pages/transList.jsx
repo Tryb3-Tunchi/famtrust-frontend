@@ -17,7 +17,7 @@ const TransList = ({ data }) => {
       </div>
       <div className="pb-10 w-11/12 mx-auto ">
         {data.map((db) => (
-          <div className="flex justify-around truncate" key={db.id}>
+          <div className="flex justify-around  truncate" key={db.id}>
             <div className="break-words  text-secondary-grey px-4 my-2 text-sm md:text-base  ">
               {db.date}
             </div>

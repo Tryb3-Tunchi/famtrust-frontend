@@ -40,6 +40,9 @@ const Home = () => {
           </button>
           <button className="bg-blue-300 rounded-lg p-2 hover:bg-black hover:text-white hover:scale-100">
             <Link to="/fundRequest.jsx">go to Fund Request</Link>
+          </button> <br />
+          <button className="bg-blue-300 rounded-lg p-2 hover:bg-black hover:text-white hover:scale-100">
+            <Link to="/footer.jsx">Newsletter</Link>
           </button>
         </div>
       </div>

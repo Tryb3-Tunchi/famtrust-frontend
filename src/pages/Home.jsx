@@ -1,8 +1,6 @@
 //Scroll down to see my custom Made homePage
 //click the button to navigate to both pages and everything works on the page
 
-
-
 // import React from 'react';
 // import MainLayout from '../components/Layout/MainLayout';
 // import { Link } from 'react-router-dom';
@@ -35,14 +33,15 @@ const Home = () => {
       <div className="w-10/12 relative m-auto pl-10 pt-10 text-center">
         <p className="text-6xl font-bold">Home Page</p>
         <div className="mt-10">
-          <button className="bg-blue-300 m-4 rounded-lg p-2 hover:bg-black hover:text-white hover:scale-100">
+          <button className="bg-blue-300  rounded-lg p-2 hover:bg-black hover:text-white hover:scale-100">
             <Link to="/transaction.jsx">go to Transaction</Link>
           </button>
-          <button className="bg-blue-300 rounded-lg p-2 hover:bg-black hover:text-white hover:scale-100">
+          <button className="bg-blue-300 rounded-lg m-4 p-2 hover:bg-black hover:text-white hover:scale-100">
             <Link to="/fundRequest.jsx">go to Fund Request</Link>
-          </button> <br />
-          <button className="bg-blue-300 rounded-lg p-2 m-2 hover:bg-black hover:text-white hover:scale-100">
-            <Link to="/footer.jsx">Newsletter</Link>
+          </button>
+          <br />
+          <button className="bg-blue-300 rounded-lg p-2  hover:bg-black hover:text-white hover:scale-100">
+            <Link to="/newsLetter.jsx">Newsletter</Link>
           </button>
         </div>
       </div>

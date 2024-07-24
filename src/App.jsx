@@ -6,7 +6,7 @@ import TopBar from './components/TopBar';
 import Transaction from './pages/transaction';
 import FundRequest from './pages/fundRequest';
 import Submit from './pages/submit';
-import Footer from './pages/footer';
+import NewsLetter from './pages/newsLetter';
 
 function App() {
   return (
@@ -19,9 +19,8 @@ function App() {
           <Route path="/transaction.jsx" element={<Transaction />} />
           <Route path="/fundRequest.jsx" element={<FundRequest />} />
           <Route path="/submit.jsx" element={<Submit />} />
-          <Route path="/footer.jsx" element={<Footer />} />
+          <Route path="/newsLetter.jsx" element={<NewsLetter />} />
         </Routes>
-        
       </MainLayout>
     </Router>
   );

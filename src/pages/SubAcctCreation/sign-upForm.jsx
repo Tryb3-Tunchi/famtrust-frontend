@@ -6,7 +6,7 @@ const SignUpForm = () => {
     <div className="flex justify-center items-center">
       <div className="py-[32px] px-4 mx-auto lg:w-[700px]  w-3/4 bg-primary-white pt-4 border-2 border-secondary-grey3 my-10 rounded-xl text-base font-lato ">
         <div className=" flex items-center justify-between  my-10 mb-10">
-          <h2 className="text-3xl  text-primary-blue font-semibold ">
+          <h2 className="text-3xl  text-primary-blue font-semibold mr-4 ">
             Complete Sign Up Form
           </h2>
           <RxCross1 />
@@ -58,7 +58,7 @@ const SignUpForm = () => {
             <button className="p-2 px-3 border bg-secondary-grey3 rounded-lg">
               <Link to="/">Reject Onboarding</Link>
             </button>
-            <button className="p-2 px-3 border bg-primary-blue text-white rounded-lg">
+            <button className="p-2 px-3 border ml-4 bg-primary-blue text-white rounded-lg">
               <Link to="/ModalCreateNewSub.jsx">Complete sign-up</Link>
             </button>
           </div>

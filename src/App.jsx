@@ -11,6 +11,7 @@ import ModalCreateNewSub from './pages/SubAcctCreation/ModalCreateNewSub';
 import SuBAcctCreation from './pages/SubAcctCreation/SuBAcctCreation';
 import Created from './pages/SubAcctCreation/created';
 import SignUpForm from './pages/SubAcctCreation/sign-upForm';
+import Modal from './pages/SubAcctCreation/modal';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           />
           <Route path="/SuBAcctCreation.jsx" element={<SuBAcctCreation />} />
           <Route path="/created.jsx" element={<Created />} />
+          <Route path="/modal.jsx" element={<Modal />} />
         </Routes>
       </MainLayout>
     </Router>

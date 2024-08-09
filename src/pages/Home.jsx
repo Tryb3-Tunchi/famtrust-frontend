@@ -24,10 +24,15 @@
 
 //Tunchi Made this
 
+import { useState } from 'react';
 import MainLayout from '../components/Layout/MainLayout';
 import { Link } from 'react-router-dom';
+import Modal from './SubAcctCreation/modal'
+import SignUpForm from './SubAcctCreation/sign-upForm';
+useState;
 
 const Home = () => {
+  
   return (
     <MainLayout activePage="home" showDashboardSidebar showTopbar>
       <div className="w-10/12 relative m-auto pl-10 pt-10 text-center">
@@ -46,8 +51,12 @@ const Home = () => {
           <button className="bg-blue-300 rounded-lg p-2 m-3  hover:bg-black hover:text-white hover:scale-100">
             <Link to="/sign-upForm.jsx">CreateAct Form</Link>
           </button>
+          
+          
         </div>
+        
       </div>
+      
     </MainLayout>
   );
 };

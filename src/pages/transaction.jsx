@@ -2,8 +2,7 @@ import { useState } from 'react';
 import TransList from './transList';
 import TransSearch from './transSearch';
 import { Link } from 'react-router-dom';
-import { CgProfile } from 'react-icons/cg';
-import { VscArrowSmallDown } from 'react-icons/vsc';
+
 
 const Transaction = () => {
   const [data, setData] = useState([

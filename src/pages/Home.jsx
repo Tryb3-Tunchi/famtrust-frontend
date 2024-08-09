@@ -43,6 +43,9 @@ const Home = () => {
           <button className="bg-blue-300 rounded-lg p-2  hover:bg-black hover:text-white hover:scale-100">
             <Link to="/newsLetter.jsx">Newsletter</Link>
           </button>
+          <button className="bg-blue-300 rounded-lg p-2 m-3  hover:bg-black hover:text-white hover:scale-100">
+            <Link to="/sign-upForm.jsx">CreateAct Form</Link>
+          </button>
         </div>
       </div>
     </MainLayout>

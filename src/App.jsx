@@ -7,6 +7,10 @@ import Transaction from './pages/transaction';
 import FundRequest from './pages/fundRequest';
 import Submit from './pages/submit';
 import NewsLetter from './pages/newsLetter';
+import ModalCreateNewSub from './pages/SubAcctCreation/ModalCreateNewSub';
+import SuBAcctCreation from './pages/SubAcctCreation/SuBAcctCreation';
+import Created from './pages/SubAcctCreation/created';
+import SignUpForm from './pages/SubAcctCreation/sign-upForm';
 
 function App() {
   return (
@@ -20,6 +24,13 @@ function App() {
           <Route path="/fundRequest.jsx" element={<FundRequest />} />
           <Route path="/submit.jsx" element={<Submit />} />
           <Route path="/newsLetter.jsx" element={<NewsLetter />} />
+          <Route path="/sign-upForm.jsx" element={<SignUpForm />} />
+          <Route
+            path="/ModalCreateNewSub.jsx"
+            element={<ModalCreateNewSub />}
+          />
+          <Route path="/SuBAcctCreation.jsx" element={<SuBAcctCreation />} />
+          <Route path="/created.jsx" element={<Created />} />
         </Routes>
       </MainLayout>
     </Router>
